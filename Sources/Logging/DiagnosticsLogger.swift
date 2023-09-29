@@ -8,7 +8,10 @@
 
 import ExceptionCatcher
 import Foundation
+
+#if canImport(MetricKit)
 import MetricKit
+#endif
 
 #if os(macOS)
 import AppKit

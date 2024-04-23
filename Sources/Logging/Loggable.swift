@@ -203,7 +203,7 @@ extension MXCallStackTree {
 extension String.StringInterpolation {
     // swiftlint:disable:next cyclomatic_complexity
     mutating func appendInterpolation(exceptionType: Int32?) {
-        guard let exceptionType = exceptionType else {
+        guard let exceptionType else {
             appendLiteral("")
             return
         }
@@ -247,7 +247,7 @@ extension String.StringInterpolation {
 
     // swiftlint:disable:next cyclomatic_complexity function_body_length
     mutating func appendInterpolation(signal: Int32?) {
-        guard let signal = signal else {
+        guard let signal else {
             appendLiteral("")
             return
         }
